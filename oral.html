@@ -1,0 +1,316 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Markdown Viewer</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            h1, h2 {
+                color: #333;
+            }
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            ul li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Python Questions🚀</h1>
+<h2>Easy Level✅</h2>
+<h1>1. What is Python?</h1>
+<ul>
+<li>A high level programming language that uses an interpreter.</li>
+<li>We can have different paradigms in python, such as OOP, functional, procedural and etc.</li>
+<li>It was invented in 1991 by Guido van Rossum.</li>
+</ul>
+<h1>2. What is a package in Python?</h1>
+<ul>
+<li>Package is a way of storing related modules in a directory. There is also a special <strong>init</strong>.py file in the directory, 
+which is an indicator that this directory should be treated as a package.</li>
+</ul>
+<h1>3. How do you define a variable in Python?</h1>
+<ul>
+<li>Without specifiying the data type before setting it a name, which is unlike most other programming languages.</li>
+</ul>
+<h1>4. What is the difference between a list and a tuple in Python?</h1>
+<ul>
+<li>lists are mutable, they are created with [] brackets. Tuples are immutable, they are created using normal brackets (). 
+They both serve the purpose of storing data. In terms of efficiency, tuples are a better option since our interpreter knows
+that the tuples are going to remain constant.</li>
+</ul>
+<h1>5. How do you check the length of a string in Python?</h1>
+<ul>
+<li>You check the length of string in python by using the built-in function len() 
+before the instance of the string object. </li>
+</ul>
+<h1>6. What is matplotlib in Python used for?</h1>
+<ul>
+<li>It is a python library used for creating static, interactive, and animated visualisations in python. 
+It can be used for generating plots, histograms, scatter plots, bar charts, and more, 
+making it a powerful tool for visualisation and analysis. It also can be integrated with 
+Pandas library, as well as NumPy.</li>
+</ul>
+<h1>7. How do you import the matplotlib.pyplot module?</h1>
+<ul>
+<li>import matplotlib.pyplot as plt</li>
+</ul>
+<h1>8. How do you create a basic line plot using matplotlib?</h1>
+<p>import matplotlib.pyplot as plt</p>
+<p>x = [1, 2, 3, 4, 5] <br>
+y = [1, 2, 3, 4, 5] <br><br>
+plt.plot(x, y, ) <br>
+plt.show()</p>
+<h1>9. How do you add labels to the x-axis and y-axis in matplotlib?</h1>
+<p>plt.xlabel("x axis")<br>
+plt.ylabel("y axis")</p>
+<h1>10. How do you save a matplotlib plot to a file?</h1>
+<p>plt.savefig("image.png")</p>
+<h1>11. What is a function in Python?</h1>
+<ul>
+<li>In Python, a function is a block of reusable code that performs a specific task. Functions allow you to break down your 
+program into smaller, modular pieces, making your code more organized, readable, and easier to maintain. Functions can take parameters, 
+return sth, or apply modifications without returning a value.</li>
+</ul>
+<h1>12. How do you define a function in Python?</h1>
+<ul>
+<li>
+<p>def function():<br>
+    function body <br></p>
+<p>return result</p>
+</li>
+</ul>
+<h1>13. What is the difference between the return statement and the print statement in Python?</h1>
+<p>return statement:<br></p>
+<ul>
+<li>The return statement is used inside a function to specify the value that the function should return as output.</li>
+<li>It is used to exit the function and pass back a value to the caller.</li>
+<li>A function can have multiple return statements, but only one of them will be executed when the function is called.</li>
+<li>The return statement is essential for functions that are designed to perform computations and produce results that need to be used or stored for further processing.</li>
+</ul>
+<p>print statement:<br></p>
+<ul>
+<li>The print statement is used to output data to the console or other output streams.</li>
+<li>It does not return a value; instead, it displays the specified data to the screen.</li>
+<li>The print statement is primarily used for debugging purposes or for providing information to the user.</li>
+<li>It can accept multiple arguments and can print variables, strings, numbers, and other data types.</li>
+</ul>
+<h1>14. How do you check if a number is even or odd in Python?</h1>
+<p>if num % 2 == 0: <br>
+    return True <br>
+return False <br></p>
+<h1>15. How do you concatenate two strings in Python?</h1>
+<ul>
+<li>with +</li>
+</ul>
+<h2>Medium Level✅✅</h2>
+<h1>1. What is pandas in Python used for?</h1>
+<ul>
+<li>Overall, Pandas is a versatile and powerful Python library for data manipulation and analysis. It simplifies the process of working with structured data by providing easy-to-use data structures and a wide range of functions for data manipulation, cleaning, analysis, and visualization. With its rich functionality and intuitive API, Pandas has become an essential tool for data scientists, analysts, and researchers across various domains. Whether you need to clean messy data, perform complex data transformations, conduct exploratory data analysis, or build predictive models, Pandas provides the tools you need to efficiently handle and analyze your data. Its seamless integration with other Python libraries makes it a cornerstone of the Python ecosystem for data science and machine learning.</li>
+</ul>
+<h1>2. How do you import the pandas library in Python?</h1>
+<ul>
+<li>import pandas as pd </li>
+</ul>
+<h1>3. How do you read a CSV file using pandas?</h1>
+<ul>
+<li>df = pd.read_csv("file.csv")
+  df.head()</li>
+</ul>
+<h1>4. How do you select specific columns from a pandas DataFrame?</h1>
+<ul>
+<li>just by using the square brackets </li>
+</ul>
+<h1>5. What is the purpose of the 'finally' block?</h1>
+<ul>
+<li>The finally block in Python is used in conjunction with the try and except blocks to define code that should be executed regardless of whether an exception occurs or not. It is typically used to define cleanup actions that must be performed, such as closing files or releasing resources, regardless of whether an exception is raised during the execution of the try block. </li>
+</ul>
+<h1>6. What is the purpose of the 'time' module in Python?</h1>
+<ul>
+<li>The time module in Python provides various functions for working with time-related tasks, including measuring time, formatting time values, and pausing or delaying program execution. It is commonly used in applications that require time-related functionality, such as scheduling tasks, measuring performance, or adding time delays between operations. </li>
+</ul>
+<h1>7. How do you work with dates and times in Python?</h1>
+<ul>
+<li>In Python, you can work with dates and times using the built-in datetime module and other related modules such as time and calendar. Here's a brief overview of how you can work with dates and times in Python:</li>
+</ul>
+<p>from datetime import datetime, date, time</p>
+<p>dt = datetime(2022, 5, 10, 12, 30, 0)
+d = date(2022, 5, 10)
+t = time(12, 30)</p>
+<h1>8. What is the purpose of the 'random' module in Python?</h1>
+<ul>
+<li>The random module in Python provides functions for generating random numbers, sequences, and making random choices. It is commonly used in various applications, including simulations, games, cryptography, statistical sampling, and more, wherever randomization is needed. </li>
+</ul>
+<h1>9. How do you generate random numbers in Python?</h1>
+<ul>
+<li>import random</li>
+</ul>
+<p>rand_float = random.random()</p>
+<h1>inclusive</h1>
+<p>rand_float_range = random.uniform(10.0, 20.0) </p>
+<h1>10. What is the purpose of the 'math' module in Python?</h1>
+<ul>
+<li>The math module in Python provides a set of mathematical functions and constants for performing mathematical operations. It includes functions for common mathematical operations, such as trigonometric functions, logarithmic functions, exponential functions, and more complex mathematical operations. The math module is part of Python's standard library and is commonly used in scientific computing, engineering, data analysis, and various other domains where mathematical computations are required. </li>
+</ul>
+<h1>11. How do you perform mathematical operations in Python?</h1>
+<ul>
+<li>// floor division</li>
+<li>** exponentiation (starts from the right hand side)</li>
+<li>% modulus </li>
+</ul>
+<h1>12. How do you sort a list in Python?</h1>
+<ul>
+<li>sorted(my_list) reverse = True as a second argument results ina descending order </li>
+</ul>
+<h1>13. How do you open and read from a file in Python?</h1>
+<ul>
+<li>open("file.docx", "r") </li>
+</ul>
+<h1>14. What is the difference between Python 2 and Python 3?</h1>
+<ul>
+<li>print statement with brackets in python 3</li>
+<li>5 / 2 = 2.5 in python 3</li>
+<li>python 2 exception catching can also catch syntax errors </li>
+</ul>
+<h1>15. How do you take user input in Python?</h1>
+<ul>
+<li>income = input("Enter your salary: ")</li>
+</ul>
+<h2>Difficult Level✅✅✅</h2>
+<h1>1. What is numpy in Python used for?</h1>
+<ul>
+<li>NumPy is a powerful Python library used for numerical computing. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently. NumPy is widely used in scientific computing, data analysis, machine learning, and other domains where numerical computations are prevalent. Here are some key features and functionalities of NumPy:</li>
+</ul>
+<h1>2. How do you import the numpy library in Python?</h1>
+<ul>
+<li>import numpy as np</li>
+</ul>
+<h1>3. How do you create a numpy array?</h1>
+<ul>
+<li>np.array([...]) or we can also use tuples instead of lists </li>
+</ul>
+<h1>4. How do you write to a file in Python?</h1>
+<ul>
+<li>with open("text.txt", "w") as file:</li>
+<li>file.write("Bring it back\n") </li>
+</ul>
+<h1>5. How do you calculate the mean of a numpy array?</h1>
+<ul>
+<li>mean_value = np.mean() </li>
+</ul>
+<h1>6. What is the difference between 'is' and '==' in Python?</h1>
+<ul>
+<li>equality operator checks whether the two values are equal, while the is operator checks if two variables refer to the same type of object in memory.</li>
+</ul>
+<h1>7. How do you create and use a virtual environment in Python?</h1>
+<ul>
+<li>python venv venv </li>
+<li>venv/Scripts/activate.bat </li>
+</ul>
+<h1>8. What is the purpose of the 'init' method in a class?</h1>
+<ul>
+<li>
+<p>The <strong>init</strong> method in Python is a special method, also known as a constructor, that is automatically called when a new instance of a class is created. Its primary purpose is to initialize the attributes of the newly created object.</p>
+</li>
+<li>
+<p>class Person:
+    def <strong>init</strong>(self, name, age):
+        self.name = name
+        self.age = age</p>
+</li>
+</ul>
+<h1>9. How do you define and use class methods in Python?</h1>
+<ul>
+<li>
+<p>class MyClass:
+    @classmethod
+    def class_method(cls, arg1, arg2):
+        print("Class method called")
+        print("Arguments:", arg1, arg2)
+        print("Class:", cls)</p>
+<p>cls refers to the class itself</p>
+</li>
+</ul>
+<h1>10. What is a static method in Python?</h1>
+<ul>
+<li>A static method in Python is a method that belongs to a class but does not operate on instances of the class 
+(i.e., it does not have access to instance attributes or methods). Instead, it is a method that is associated with
+the class itself and can be called using the class name.</li>
+</ul>
+<h1>11. How do you define and use a static method?</h1>
+<ul>
+<li>class MyClass:
+    @staticmethod
+    def static_method(arg1, arg2):
+        print("Static method called")
+        print("Arguments:", arg1, arg2)</li>
+</ul>
+<h1>12. What is object-oriented programming (OOP)?</h1>
+<ul>
+<li>Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain 
+data (attributes or properties) and code (methods or functions). It emphasizes the organization of software as a collection 
+of objects that interact with each other to perform tasks. OOP aims to structure code in a way that models real-world entities 
+and their relationships. </li>
+</ul>
+<h1>13. What are classes and objects in Python?</h1>
+<ul>
+<li>A class is a blueprint for creating objects. It defines the properties (attributes) and behaviors (methods) that all objects of the class will have.</li>
+<li>Classes are defined using the class keyword, followed by the class name and a colon. The body of the class contains attribute and method definitions.</li>
+</ul>
+<h1>14. How do you define a class in Python?</h1>
+<ul>
+<li>In Python, you define a class using the class keyword followed by the class name and a colon :. </li>
+<li>The body of the class contains attribute and method definitions, which encapsulate the data and behavior of objects created from the class. </li>
+<li>Here's the general syntax for defining a class in Python:</li>
+</ul>
+<h1>15. What is inheritance in Python?</h1>
+<ul>
+<li>Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a new class (subclass or derived class) to inherit attributes and methods from an existing class (superclass or base class). In Python, inheritance enables code reuse and promotes the creation of hierarchical relationships between classes. </li>
+</ul>
+<h1>16. How do you implement inheritance in Python?</h1>
+<p>class Animal:
+    def speak(self):
+        return "Animal speaks"</p>
+<p>class Dog(Animal):<br />
+    def bark(self):
+        return "Woof!"</p>
+<h1>17. What is method overriding?</h1>
+<ul>
+<li>Method overriding is a concept in object-oriented programming (OOP) that allows a subclass to provide a specific implementation of a </li>
+<li>method that is already defined in its superclass. When a subclass overrides a method, it provides its own implementation of the method, which replaces the  - implementation inherited from the superclass.</li>
+</ul>
+<h1>18. How do you use the super() function in Python?</h1>
+<ul>
+<li>class Parent:
+    def method(self):
+        return "Parent method"</li>
+</ul>
+<p>class Child(Parent):
+    def method(self):
+        # Call superclass method
+        result = super().method()
+        return f"Child method, {result}"</p>
+<p>obj = Child()
+print(obj.method())  # Output: Child method, Parent method</p>
+<h1>19. How do you handle exceptions in Python?</h1>
+<ul>
+<li>try-except blocks </li>
+</ul>
+<h1>20. What is the purpose of the try-except block?</h1>
+<ul>
+<li>The purpose of the try-except block in Python is to handle exceptions and gracefully manage errors that may occur during the execution of
+a program. It allows you to anticipate potential errors, prevent your program from crashing, and provide alternative behavior or error messages 
+when exceptions occur. </li>
+</ul>
+    </body>
+    </html>
+    
